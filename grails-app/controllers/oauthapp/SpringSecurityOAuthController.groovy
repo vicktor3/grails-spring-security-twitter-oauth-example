@@ -43,6 +43,9 @@ class SpringSecurityOAuthController {
     def oauthService
     def springSecurityService
 
+    /** dependency injection for the password encoder */
+    def passwordEncoder
+
     /**
      * This can be used as a callback for a successful OAuth authentication
      * attempt. It logs the associated user in if he or she has an internal

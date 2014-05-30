@@ -110,7 +110,11 @@
 			   click on each to execute its default action:</p>
 
 		    <h2>Login with:</h2>
-            <ul><li><oauth:connect provider="twitter" id="twitter-connect-link">Twitter</oauth:connect></li></ul>
+            <oauth:connect provider="twitter" id="twitter-connect-link">>>Twitter</oauth:connect><br/>
+            <br/>
+            Logged in with twitter?
+            <s2o:ifLoggedInWith provider="twitter">yes</s2o:ifLoggedInWith>
+            <s2o:ifNotLoggedInWith provider="twitter">no</s2o:ifNotLoggedInWith>
 
 			<div id="controller-list" role="navigation">
 				<h2>Available Controllers:</h2>
