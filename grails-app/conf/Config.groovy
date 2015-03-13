@@ -138,11 +138,12 @@ oauth {
     twitter {
       //api = org.scribe.builder.api.TwitterApi
       api = org.scribe.builder.api.TwitterApi.SSL
-      key = 'twitter_oauth_key'
-      secret = 'twitter_oauth_secret'
+      key = 'YStOSmiKWllCpM3MG4ofzGRlB'
+      secret = 'fySDOhVkWXj2vjkWca3wgniLHh5F8RCJusXlJGtQQJGB0i71fB'
       successUri = '/oauth/twitter/success'
       failureUri = '/oauth/twitter/error'
       //callback = "${baseURL}/oauth/twitter/callback"
+        //Below has been added to support callbacks from the Twitter dev application management console.
       callback = 'http://localhost:8080/oauthapp/oauth/twitter/callback'
     }
   }
